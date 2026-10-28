@@ -1,0 +1,33 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="EsCalcolatore.MainWindow"
+        Title="Calcolatore figure geometriche"
+        Width="500"
+        Height="580">
+
+        <StackPanel Margin="16" Spacing="8">
+
+        <TextBlock Text="Figura"/>
+        <ComboBox x:Name="CmbFigura" SelectionChanged="CmbFigura_SelectionChanged">
+            <ComboBoxItem Content="Rettangolo"/>
+            <ComboBoxItem Content="Quadrato"/>
+            <ComboBoxItem Content="Cerchio"/>
+        </ComboBox>
+
+        <TextBlock Text="Per i decimali usa la virgola (es. 2,31)"/>
+
+        <TextBlock x:Name="LblMisura1" Text="Base"/>
+        <TextBox x:Name="TxtMisura1"/>
+
+        <TextBlock x:Name="LblMisura2" Text="Altezza"/>
+        <TextBox x:Name="TxtMisura2"/>
+
+        <Button Content="Calcola" Click="BtnCalcola_Click"/>
+
+        <TextBlock x:Name="TxtRisultato"/>
+
+    </StackPanel>
+</Window>
